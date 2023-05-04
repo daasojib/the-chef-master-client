@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import Slider from '../Slider/Slider';
+import NavBar from '../Navbar/Navbar';
 
 const Header = () => {
           return (
                     <div>
-                              <Navbar></Navbar>
+                              <NavBar></NavBar>
                               <Slider></Slider>
                               
                     </div>

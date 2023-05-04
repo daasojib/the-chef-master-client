@@ -1,9 +1,16 @@
+import { Button } from 'bootstrap';
 import React from 'react';
+import { FaGoogle, FaGithub, FaMailBulk,FaCode } from 'react-icons/fa';
+
 
 const Login = () => {
           return (
                     <div>
-                              <h2>This is login page</h2>
+                              <h3>Login With</h3>
+                              <Button className='mb-2' variant="outline-primary"> <FaGoogle />Login with Google</Button>
+                              <Button className='mb-2' variant="outline-secondary"> <FaGithub />Login with GitHub</Button>
+                              <Button className='mb-2' variant="outline-info"> <FaMailBulk />Login with Email</Button>
+                              <Button className='mb-2' variant="outline-info"> <FaCode />Registration</Button>
                     </div>
           );
 };

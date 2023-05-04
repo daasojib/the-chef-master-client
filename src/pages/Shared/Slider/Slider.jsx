@@ -7,7 +7,7 @@ import img3 from '../../../assets/Khao-Pad.jpg.webp'
 
 const Slider = () => {
           return (
-                    <div className='w-75 mx-auto'>
+                    <div className='w-50 mx-auto'>
                                  <Carousel className='h-75'>
       <Carousel.Item>
         <img

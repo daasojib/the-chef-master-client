@@ -18,7 +18,7 @@ const NavBar = () => {
             <Nav.Link href="#deets">
               Profile
             </Nav.Link>
-            <Nav.Link eventKey={2} href="/login">
+            <Nav.Link eventKey={2} to="/login">
             <Button variant="danger">Login</Button>
             </Nav.Link>
           </Nav>
