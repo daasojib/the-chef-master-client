@@ -7,7 +7,6 @@ import RightNav from '../../Shared/RightNav/RightNav';
 const Home = () => {
           return (
                     <div>
-                              <h2>This is home</h2>
                               <Chefs></Chefs>
                               <Container className='mt-5'>
                                         <Row>
