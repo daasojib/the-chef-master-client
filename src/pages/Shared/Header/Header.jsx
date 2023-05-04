@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import Slider from '../Slider/Slider';
 
 const Header = () => {
           return (
                     <div>
-                              <h2>This is header</h2>
+                              <Navbar></Navbar>
+                              <Slider></Slider>
+                              
                     </div>
           );
 };
