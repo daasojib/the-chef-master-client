@@ -5,22 +5,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from '../pages/Shared/LeftNav/LeftNav';
 import RightNav from '../pages/Shared/RightNav/RightNav';
 import Chefs from '../pages/Chefs/Chefs';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
           return (
                     <div>
                               <Header></Header>
-                              <Chefs></Chefs>
-                              <Container>
-                                        <Row>
-                                                  <Col lg={6}>
-                                                            <LeftNav></LeftNav>
-                                                  </Col>
-                                                  <Col lg={6}>
-                                                            <RightNav></RightNav>
-                                                  </Col>
-                                        </Row>
-                              </Container>
+                              <Outlet></Outlet>
                               <Footer></Footer>
                     </div>
           );
