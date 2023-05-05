@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Slider from '../Slider/Slider';
 
 
 const NavBar = () => {
@@ -20,7 +21,7 @@ const NavBar = () => {
             <Nav.Link href="#deets">
               Profile
             </Nav.Link>
-            <Nav.Link eventKey={2} href="/login">
+            <Nav.Link className='btn btn-danger text-white' eventKey={2} href="/login">
               Login
             </Nav.Link>
           </Nav>
