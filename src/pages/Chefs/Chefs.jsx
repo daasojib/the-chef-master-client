@@ -9,7 +9,7 @@ const Chefs = () => {
           const [categories, setCategories] = useState([]);
 
           useEffect(()=>{
-                    fetch('http://localhost:5000/categories')
+                    fetch('https://the-chef-master-server-dasojib.vercel.app/categories')
                     .then(res=>res.json())
                     .then(data=>setCategories(data))
                     .catch(error=>console.log(error))
