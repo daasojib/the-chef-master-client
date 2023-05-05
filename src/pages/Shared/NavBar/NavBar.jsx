@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Slider from '../Slider/Slider';
 import { AuthContext } from '../../../providers/AuthProvider';
-import { FaUserCircle } from 'react-icons/fa';
 
 
 const NavBar = () => {
