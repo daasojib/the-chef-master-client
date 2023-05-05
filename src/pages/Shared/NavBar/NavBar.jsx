@@ -30,7 +30,8 @@ const NavBar = () => {
           </Nav>
           <Nav>
            {
-           user && <FaUserCircle style={{fontSize:'2rem'}}></FaUserCircle>
+           user && user.photoURL ? <img src={user.photoURL} alt="" /> :
+           <img width="30" height="30" src='https://coconuts.co/wp-content/uploads/2018/08/beehead.jpg' alt="" />
             }
             {user ?
                     <Button onClick={handleLogOut} variant='secondary'>Logout</Button> :
