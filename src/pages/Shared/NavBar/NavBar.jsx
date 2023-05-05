@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Slider from '../Slider/Slider';
+import { AuthContext } from '../../../providers/AuthProvider';
+import { FaUserCircle } from 'react-icons/fa';
 
 
 const NavBar = () => {
+
+  const {user} = useContext(AuthContext);
+
+
           return (
                     <div>
                         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -15,15 +21,17 @@ const NavBar = () => {
           <Nav className="mx-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/blog">Blog</Nav.Link>
-            {/* <Link to='/blog'>Blog</Link> */}
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">
-              Profile
-            </Nav.Link>
-            <Nav.Link className='btn btn-danger text-white' eventKey={2} href="/login">
-              Login
-            </Nav.Link>
+           {user &&
+              <FaUserCircle style={{fontSize:'2rem'}}></FaUserCircle>
+            }
+            {user ?
+                    <Button variant='secondary'>Logout</Button> :
+                    <Link to="/login">
+                      <Button variant='secondary'>Login</Button>
+                    </Link>
+              }
           </Nav>
         </Navbar.Collapse>
       </Container>
